@@ -13,14 +13,41 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/915d12783e.js" crossorigin="anonymous"></script>
     
+    <style>
+      @keyframes bounce {
+    0%, 100% {
+        transform: translateY(-10%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+  }
+    </style>
+
 </head>
 <body>
     <header class="bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3] mb-35">
         
-     <nav class="pt-8">
-        <div class="flex justify-around">
+     <nav class="pt-8 ">
+      <!-- responsive navbar -->
+      <div class="">
+        <div class="flex items-center justify-around">
+       <img class="pb-5" src="c2-assets/logo-footer.png" alt="">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="size-7">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      
+       <!-- <i class="fa-solid fa-bars text-[#179800]"></i> -->
+      </div>
+       <hr class="border-[#179800] ">
+      
+       <!-- finish responsive ^ -->
+
+        <div class="md:flex md:justify-around hidden">
+         
            <img src="c2-assets/logo-header.png" alt="">
-          
             <ul class="inline-flex gap-8 items-center text-xl">
                 <li>Product</li>
                 <li>Services</li>
@@ -40,9 +67,10 @@
             <button class="bg-[#179800] px-8 py-3 rounded-lg text-white text-xl">Register</button>
            </div>
         </div>
-
+      </div>
         <!-- banner -->
-        <div class="text-center mt-32">
+        <div class="text-center mt-32 ">
+          <!-- animate-bounce -->
           <h1 class="font-semibold text-6xl">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
             <p class="text-xl text-[#111111] pt-8 pb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
             <div class="flex items-center justify-center">
@@ -306,7 +334,7 @@
        <!-- crossover -->
        <section class="max-w-7xl my-0 mx-auto  rounded-3xl relative">
         <!-- container -->
-        <div class="w-full flex items-center justify-around bg-[#EFEBE3] absolute bottom-50 rounded-3xl">
+        <div class="w-full flex items-center justify-around bg-[#EFEBE3] absolute bottom-25 rounded-3xl">
            <!-- img -->
             <div>
               <img src="c2-assets/vegetable-busket.png" alt="">
